@@ -469,3 +469,284 @@ button:active {
     flex: 1;
   }
 }
+
+
+#searchInput {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: white;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.files-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+
+/* CloudVault Insights — dark developer theme */
+body {
+  background: #090d16;
+  color: #e5eaf5;
+}
+
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top left, #14213b 0%, transparent 42%),
+    #090d16;
+}
+
+.navbar,
+.upload-card,
+.stat-card,
+.panel,
+.files-section {
+  background: rgba(16, 23, 38, 0.94);
+  border: 1px solid #263249;
+  color: #e5eaf5;
+}
+
+.navbar {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.hero h2,
+.section-heading h2,
+.files-header h2 {
+  color: #f1f5ff;
+}
+
+.hero p,
+.section-heading p,
+.panel-description,
+.stat-note,
+.muted {
+  color: #8c9bb5;
+}
+
+.insights-section {
+  margin: 28px 0;
+  color: #e5eaf5;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin: 6px 0;
+}
+
+.eyebrow,
+.stat-label {
+  color: #8c9bb5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.live-badge {
+  color: #6ee7b7;
+  background: #10352d;
+  border: 1px solid #205747;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.stat-card {
+  padding: 22px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat-card strong {
+  font-size: 30px;
+  letter-spacing: -1px;
+  color: #f8fafc;
+}
+
+.stat-note {
+  font-size: 12px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  padding: 22px;
+  border-radius: 14px;
+  min-width: 0;
+}
+
+.panel h3 {
+  margin: 0 0 7px;
+  color: #e5eaf5;
+}
+
+.panel-description {
+  margin: 0 0 22px;
+  font-size: 13px;
+}
+
+.type-row {
+  margin: 18px 0;
+}
+
+.type-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.type-label span:last-child,
+.type-size {
+  color: #8c9bb5;
+}
+
+.progress-track {
+  height: 6px;
+  background: #273249;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  min-width: 0;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  border-radius: inherit;
+}
+
+.type-size {
+  text-align: right;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.recent-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 0;
+  border-bottom: 1px solid #263249;
+  min-width: 0;
+}
+
+.recent-row:last-child {
+  border-bottom: 0;
+}
+
+.recent-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: #202c46;
+  color: #8bafff;
+  border-radius: 9px;
+}
+
+.recent-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recent-info strong {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  color: #e5eaf5;
+}
+
+.recent-info span,
+.recent-size {
+  font-size: 10px;
+  color: #8c9bb5;
+}
+
+.recent-size {
+  flex-shrink: 0;
+}
+
+#searchInput,
+#fileInput,
+input[type="text"] {
+  background: #0c1322;
+  color: #e5eaf5;
+  border-color: #33415b;
+}
+
+.file-row {
+  border-color: #263249;
+}
+
+.file-row strong,
+.file-info strong {
+  color: #e5eaf5;
+}
+
+.file-info span {
+  color: #8c9bb5;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .stat-card {
+    padding: 18px;
+  }
+}
